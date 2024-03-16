@@ -68,12 +68,26 @@ body {
 }
 
 
+
+.social_main {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+}
+
+
+
 .social_btn {
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: content-box;
+    width: 115px;
     background-color: var(--Grey);
     color: var(--White);
     border-radius: 10px;
     border: none;
-    padding: 1em 2em;
+    padding: 1em 5.7em;
     font-weight: bold;
     transition: all 300ms;
     cursor: pointer;
@@ -87,8 +101,11 @@ body {
 }
 
 
-.social_main {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+
+@media (min-width: 786px)
+{
+    .social_btn {
+        padding-left: 7em;
+        padding-right: 7em;
+    }
 }
