@@ -1,0 +1,85 @@
+:root 
+{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--OffBlack);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+* :first-child {
+    margin-top: 0;
+}
+
+*:last-child {
+    margin-bottom: 0;
+}
+
+
+.social {
+    background-color: var(--DarkGrey);
+    max-width: 400px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    color: var(--White);
+    padding: 2em 7%;
+}
+
+.social_header {
+    margin-bottom: 1.5em;
+}
+.social_header > * {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social_img {
+    border-radius: 50%;
+    max-width: 100px;
+}
+
+.social_title{
+    font-size: 1.7rem;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.social_location {
+    color: var(--Green);
+    margin-top: .5em;
+}
+
+
+.social_btn {
+    background-color: var(--Grey);
+    color: var(--White);
+    border-radius: 10px;
+    border: none;
+    padding: 1em 2em;
+    font-weight: bold;
+}
+
+
+.social_main {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
